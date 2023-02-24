@@ -1,0 +1,67 @@
+@import '../Partials/colors';
+@import '../Partials/fonts';
+
+
+nav {
+    background-color: $primary;
+
+    a {
+        @include titleMenuFont(25px);
+        text-decoration: none;
+        display: inline;
+        padding: 15px;
+    }
+
+    h1 {
+        @include titleMenuFont(40px);
+        padding-right: 80px;
+    }
+
+    button{
+        background-color: $primary;
+        color: $texton;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        display: flex;
+        flex-direction: col;
+
+        button {
+            display: none;
+        }
+
+        .enlacesDesktop {
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+
+    .enlacesMovilFalse {
+        display: none;
+    }
+
+    .enlacesMovilTrue {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .enlacesMovilTrue {
+        text-align: center;
+        a{
+            display: list-item;
+        }
+    }
+
+    .enlacesMovilFalse {
+        display: none;
+    }
+
+    .enlacesDesktop {
+        display: none;
+    }
+}

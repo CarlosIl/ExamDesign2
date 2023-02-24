@@ -1,0 +1,25 @@
+// @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+@import 'colors';
+
+@mixin titleMenuFont($tamaño){
+    font-family: 'Bodoni Moda', serif;
+    font-size: $tamaño;
+    color: $texton;
+}
+
+// @mixin footerFont(){
+//     font-family: 'Zeyada', cursive;
+//     font-size: 20px;
+//     color: $texton;
+// }
+
+@mixin titulosContentFont($tamaño){
+    font-family: 'EB Garamond', serif;
+    font-size: $tamaño;
+}

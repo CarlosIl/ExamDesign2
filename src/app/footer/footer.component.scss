@@ -1,0 +1,43 @@
+@import '../Partials/colors';
+@import '../Partials/fonts';
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align:middle;
+    background-color: $primary;
+}
+p {
+    @include titulosContentFont(25px);
+    white-space: pre-line;
+    text-decoration: underline;
+    text-decoration-color: $texton;
+}
+
+pre{
+    @include titulosContentFont(25px);
+    white-space: pre-line;
+    text-decoration: underline;
+    text-decoration-color: $texton;
+}
+
+img{
+    width: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            div{
+                width: 70%;
+                padding: 20px;
+            }
+            img{
+                display: inline;
+            }
+        }
+}

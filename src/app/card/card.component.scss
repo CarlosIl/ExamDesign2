@@ -1,0 +1,32 @@
+@import '../Partials/colors';
+@import '../Partials/fonts';
+
+.card{
+    background-color: $secondary_lg;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.card-content{
+    h2{
+        @include titulosContentFont(25px);
+        color: $texton;
+        text-decoration: underline;
+        text-decoration-color: $texton;
+    }
+    p{
+        @include titulosContentFont(18px);
+        color: $texton;
+    }
+}
+
+.card-image{
+    padding-top: 50px;
+}
+
+img{
+    width: 80%;
+    height: 500px;
+}

@@ -1,0 +1,14 @@
+<nav>
+    <button (click)="toggle()"><span class="material-symbols-outlined">menu</span></button>
+    <h1>Exam Museum</h1>
+
+    <div class="enlacesDesktop">
+        <a routerLink="home" routerLinkActive="active-link">HOME</a>
+        <a routerLink="gallery" routerLinkActive="active-link">PICTURES</a>
+    </div>
+
+    <div [ngClass]="mostrar ? 'enlacesMovilTrue' : 'enlacesMovilFalse'">
+        <a routerLink="home" routerLinkActive="active-link">HOME</a>
+        <a routerLink="gallery" routerLinkActive="active-link">PICTURES</a>
+    </div>
+</nav>
